@@ -1,38 +1,12 @@
 // npm install @apollo/server express graphql cors { ApolloServer } from "@apollo/server";
 import { ApolloServer } from "@apollo/server";
-import { expressMiddleware } from "@apollo/server/express4";
-import { ApolloServerPluginDrainHttpServer } from "@apollo/server/plugin/drainHttpServer";
-import express from "express";
-import http from "http";
-import cors from "cors";
+import { startStandaloneServer } from "@apollo/server/standalone";
 import { schema } from "./schema/schema.js";
-import { OpenWeatherMapWeatherAPI } from "./datasources/data.js";
-
-const app = express();
-const httpServer = http.createServer(app);
 
 const server = new ApolloServer({
   schema: schema,
-  plugins: [ApolloServerPluginDrainHttpServer({ httpServer })],
 });
 
-await server.start();
+const { url } = await startStandaloneServer(server);
 
-app.use(
-  "/graphql",
-  cors({
-    origin: ["http://localhost:4000/graphql"],
-  }),
-  express.json(),
-  expressMiddleware(server, {
-    context: async () => {
-      const weatherApi = new OpenWeatherMapWeatherAPI();
-      return {
-        dataSources: { weatherApi },
-      };
-    },
-  })
-);
-
-await new Promise<void>((resolve) => httpServer.listen({ port: 4000 }, resolve));
-console.log(`🚀 Server ready at http://localhost:4000/graphql`);
+console.log(`🚀  Server ready at ${url}`);

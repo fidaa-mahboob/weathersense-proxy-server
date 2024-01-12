@@ -51,7 +51,7 @@ type Main {
 type List {
   dt: Int
   visibility: Int
-  pop: Int
+  pop: Float
   dt_txt: String
   sys: Sys
   wind: Wind

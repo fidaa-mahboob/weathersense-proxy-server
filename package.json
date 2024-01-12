@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "proxy server",
   "main": "server.js",
- "type": "module",
+  "type": "module",
   "scripts": {
     "compile": "tsc",
     "start": "npm run compile && node ./dist/server.js"
@@ -22,6 +22,7 @@
     "@apollo/datasource-rest": "^6.2.2",
     "@apollo/server": "^4.10.0",
     "@graphql-tools/schema": "^10.0.2",
+    "axios": "^1.6.5",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "graphql": "^16.8.1"
