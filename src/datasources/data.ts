@@ -1,7 +1,11 @@
 import { RESTDataSource } from "@apollo/datasource-rest";
 
-export class OpenWeatherMapCurrentWeatherAPI extends RESTDataSource {
-  override baseURL = "https://api.openweathermap.org/data/2.5/";
+export class OpenWeatherMapWeatherAPI extends RESTDataSource {
+  constructor() {
+    super();
+    this.baseURL = "https://api.openweathermap.org/data/2.5/";
+  }
+  // override baseURL = "https://api.openweathermap.org/data/2.5/";
 
   async getCurrentWeather(lon, lat) {
     const data = await this.get(
@@ -10,10 +14,6 @@ export class OpenWeatherMapCurrentWeatherAPI extends RESTDataSource {
       return resp;
     });
   }
-}
-
-export class OpenWeatherMapForecastWeatherAPI extends RESTDataSource {
-  override baseURL = "https://api.openweathermap.org/data/2.5/";
 
   async getForecastWeather(lon, lat) {
     const data = await this.get(
@@ -23,3 +23,4 @@ export class OpenWeatherMapForecastWeatherAPI extends RESTDataSource {
     });
   }
 }
+

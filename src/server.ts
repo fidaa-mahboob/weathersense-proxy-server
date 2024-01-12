@@ -6,10 +6,7 @@ import express from "express";
 import http from "http";
 import cors from "cors";
 import { schema } from "./schema/schema.js";
-import {
-  OpenWeatherMapCurrentWeatherAPI,
-  OpenWeatherMapForecastWeatherAPI,
-} from "./datasources/data.js";
+import { OpenWeatherMapWeatherAPI } from "./datasources/data.js";
 
 const app = express();
 const httpServer = http.createServer(app);
@@ -29,10 +26,9 @@ app.use(
   express.json(),
   expressMiddleware(server, {
     context: async () => {
-      const forecastApi = new OpenWeatherMapForecastWeatherAPI();
-      const weatherApi = new OpenWeatherMapCurrentWeatherAPI();
+      const weatherApi = new OpenWeatherMapWeatherAPI();
       return {
-        dataSources: { forecastApi, weatherApi },
+        dataSources: { weatherApi },
       };
     },
   })
