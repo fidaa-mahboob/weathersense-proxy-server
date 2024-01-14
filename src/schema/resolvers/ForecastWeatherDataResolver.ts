@@ -1,5 +1,6 @@
 import axios from "axios";
-let URL = "https://api.openweathermap.org/data/2.5/forecast?appid=9febc35812425cf718ad7e6c9ba49d6f";
+const API_KEY = process.env.API_KEY
+let URL = `https://api.openweathermap.org/data/2.5/forecast?appid=${API_KEY}`;
 
 export const resolver = {
   Query: {
