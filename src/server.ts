@@ -1,4 +1,5 @@
 // npm install @apollo/server express graphql cors { ApolloServer } from "@apollo/server";
+import 'dotenv/config'
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
 import { schema } from "./schema/schema.js";

@@ -1,5 +1,6 @@
 import axios from "axios";
-const API_KEY = process.env.API_KEY
+
+const API_KEY = process.env.API_KEY 
 let URL = `https://api.openweathermap.org/data/2.5/forecast?appid=${API_KEY}`;
 
 export const resolver = {
