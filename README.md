@@ -9,7 +9,11 @@ anyone wanting to connect to third part API via graphql.
 
 ## Getting Started
 
-Before you can use this app you need to change the API_KEY string, you can get this by going on <a href="https://openweathermap.org/" target="_blank" rel="noreferrer">Open Weather Map homepage </a> and create an account to generate an API key.  
+Before you can use this app you need to change the API_KEY string, you can get this by going on <a href="https://openweathermap.org/" target="_blank" rel="noreferrer">Open Weather Map homepage </a> and create an account to generate an API key. Then create a '.env' file where you can add this 
+
+```
+  API_KEY = "<Your-API-Key>"
+```
 
 ### Dependencies
 
