@@ -15,7 +15,9 @@ export const resolver = {
          message: data.message,
          cnt: data.cnt,
          city: data.city,
-         list: data.list
+         list: () => {
+          return data.list
+         }
         }
       } catch(e){
         return null
@@ -23,3 +25,5 @@ export const resolver = {
     },
   },
 };
+
+

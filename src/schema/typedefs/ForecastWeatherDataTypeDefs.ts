@@ -65,7 +65,7 @@ type ForecastWeatherData {
   message: Int
   cnt: Int
   city: City
-  list: [List]
+  list: [List!]!
 }
 
 type Query {
