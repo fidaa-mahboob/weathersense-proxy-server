@@ -4,7 +4,7 @@ This is the backend server that connects to Open Weather Map API and passes data
 
 ## Description
 
-The back end server uses GraphQL with NodeJS the reason for this is due to graphql ability to improve response time speed and only get data that is need by the frontend. The code in this repo also acts as a guide for 
+The back end server uses GraphQL with NodeJS the reason for this is due to GraphQL ability to improve response time speed and only get data that is need by the frontend. The code in this repo also acts as a guide for 
 anyone wanting to connect to third part API via graphql.
 
 ## Getting Started
