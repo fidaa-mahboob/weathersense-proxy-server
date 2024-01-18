@@ -28,5 +28,5 @@ To install the dependencies use the following command:
 To start the application use the following:
 
 ```
- npm start
+ npm run dev 
 ```
