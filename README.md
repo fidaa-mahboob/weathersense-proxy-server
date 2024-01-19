@@ -1,6 +1,6 @@
 # Weathersense Proxy Server 
 
-This is the backend server that connects to Open Weather Map API and passes data to the front end react app. 
+This is the backend server that connects to Open Weather Map API and passes data to the front end react app. The server is part of the weathersense full stack app forwarding responses to a front end <a href="https://github.com/fidaa-mahboob/weathersense">react app</a>.
 
 ## Description
 
