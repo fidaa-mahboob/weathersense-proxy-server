@@ -21,6 +21,7 @@
   "dependencies": {
     "@apollo/datasource-rest": "^6.2.2",
     "@apollo/server": "^4.10.0",
+    "@as-integrations/aws-lambda": "^3.1.0",
     "@graphql-tools/schema": "^10.0.2",
     "axios": "^1.6.5",
     "cors": "^2.8.5",
@@ -30,6 +31,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
+    "serverless-plugin-typescript": "^2.1.5",
     "typescript": "^5.3.3"
   }
 }

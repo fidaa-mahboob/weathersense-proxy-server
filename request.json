@@ -1,0 +1,16 @@
+{
+  "version": "2",
+  "headers": {
+    "content-type": "application/json"
+  },
+  "isBase64Encoded": false,
+  "rawQueryString": "",
+  "requestContext": {
+    "http": {
+      "method": "POST"
+    }
+  },
+  "rawPath": "/",
+  "routeKey": "/",
+  "body": "{\"operationName\": null, \"variables\": null, \"query\": \"forecastweatherdata(lat:53.6898,lon:1.6297){list{dt_txtmain{temp}weather{icon}}}\"}"
+}
