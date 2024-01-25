@@ -1,6 +1,6 @@
 # Weathersense Proxy Server 
 
-This is the backend server that connects to Open Weather Map API and passes data to the front end react app. 
+This is the backend server that connects to Open Weather Map API and passes data to the front end react app. The server is part of the weathersense full stack app forwarding responses to a front end <a href="https://github.com/fidaa-mahboob/weathersense">react app</a>.
 
 ## Description
 
@@ -30,3 +30,8 @@ To start the application use the following:
 ```
  npm run dev 
 ```
+
+After starting the server, the GraphQL studio can be accessed from the url stated in the bash terminal. This is what a sample query looks like: 
+
+<img width="1725" alt="Screenshot 2024-01-18 at 12 26 10" src="https://github.com/fidaa-mahboob/weathersense-proxy-server/assets/151159499/c8a8bc45-f7b1-4f97-b264-c4474df2a92d">
+
