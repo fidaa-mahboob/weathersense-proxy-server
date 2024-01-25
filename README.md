@@ -2,6 +2,22 @@
 
 This is the backend server that connects to Open Weather Map API and passes data to the front end react app. The server is part of the weathersense full stack app forwarding responses to a front end <a href="https://github.com/fidaa-mahboob/weathersense">react app</a>.
 
+
+## Tech Stack
+
+* Typescript
+* GraphQL
+* NodeJS
+* AWS Lamda
+
+## My Learning points:
+
+* Deploy my GraphQL NodeJS application to production at AWS lambda although it needs some more work.
+* Learnt about AWS IAM such as assigning user's to iam groups which is a AWS best practice.
+* Created custom IAM policies to give account access to the required AWS services.
+* learnt about schemas which is compose up of the resolver and typedefs.
+* How GraphQL operates which is based on resolvers and type definitions. In my server the resolver gets data from the Open Weather Map API and matches this with the TypeDef. 
+
 ## Description
 
 The back end server uses GraphQL with NodeJS the reason for this is due to GraphQL ability to improve response time speed and only get data that is need by the frontend. The code in this repo also acts as a guide for 
